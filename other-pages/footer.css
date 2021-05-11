@@ -1,0 +1,354 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/10177.eot");
+  src: local("☺"), url("../fonts/10177.woff") format("woff"), url("../fonts/10177.ttf") format("truetype"), url("../fonts/10177.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: "Gilroy";
+}
+
+button {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+}
+
+.footer {
+  background-color: #333333;
+  padding-top: 53px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.footer__1row {
+  max-width: 1210px;
+  padding: 0 40px 0 40px;
+  margin: 0 auto;
+}
+
+.footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__column1 {
+  margin-right: 31px;
+}
+
+.footer__title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 27px;
+}
+
+.footer__text {
+  margin-bottom: 82px;
+  color: #fff;
+}
+
+.footer__text-block {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer__column2 {
+  margin-right: 31px;
+}
+
+.footer__column3 {
+  position: relative;
+}
+
+.footer__contact-a {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-left: 33px;
+}
+
+.footer__contact-a:visited {
+  color: #fff;
+}
+
+.footer__a1 {
+  background: top 6px left url(../img/icons/footer-telegram.png) no-repeat;
+}
+
+.footer__a2 {
+  background: top 6px left url(../img/icons/footer-viber.png) no-repeat;
+}
+
+.footer__a3 {
+  background: top 6px left url(../img/icons/footer-whatsapp.png) no-repeat;
+}
+
+.footer__a4 {
+  background: top 6px left url(../img/icons/footer-call.png) no-repeat;
+}
+
+.footer__a5 {
+  background: top 9px left url(../img/icons/footer-mail.png) no-repeat;
+}
+
+.footer__button {
+  margin: 20px 0 40px 0;
+  position: relative;
+}
+
+.footer__button-p {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.footer__button:hover .footer__button-p {
+  color: #000;
+}
+
+.footer__logo {
+  position: absolute;
+  bottom: 80px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #565656;
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.footer__copyright:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  bottom: 58px;
+  left: -50%;
+  height: 2px;
+  background-color: #4e4e4e;
+}
+
+@media (max-width: 790px) {
+  .footer__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 712px) {
+  .footer__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__title {
+    position: relative;
+    cursor: pointer;
+    padding: 0px 0px 0px 30px;
+    width: 220px;
+    margin: 20px auto;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__title:before, .footer__title:after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 12px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .footer__title:before {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    left: 0;
+  }
+  .footer__title:after {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    left: 8px;
+  }
+  .footer__title.active:before, .footer__title.active:after {
+    background-color: red;
+  }
+  .footer__title.active:before {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  .footer__title.active:after {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  .footer__text {
+    display: none;
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 0;
+    width: 320px;
+    margin-right: -100px;
+  }
+  .footer__logo {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 53px;
+    width: 156px;
+    margin-left: 30px;
+  }
+  .footer__button {
+    margin-left: 10px;
+  }
+  .footer__contacts {
+    display: none;
+  }
+  .footer__column1, .footer__column2, .footer__title3 {
+    margin-right: -0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__columns {
+    margin-left: -50px;
+  }
+}

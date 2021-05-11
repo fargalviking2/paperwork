@@ -1,0 +1,241 @@
+@import "../zerostyle.scss";
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/10177.eot");
+	src: local("☺"), url("../fonts/10177.woff") format("woff"), url("../fonts/10177.ttf") format("truetype"),
+		url("../fonts/10177.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+* {
+	font-family: "Gilroy";
+}
+button {
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+	transform: translate(0, 5px);
+}
+.footer {
+	background-color: #333333;
+	padding-top: 53px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	&__1row {
+		max-width: 1210px;
+		padding: 0 40px 0 40px;
+		margin: 0 auto;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column1 {
+		margin-right: 31px;
+	}
+	&__title {
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 27px;
+		letter-spacing: 0px;
+		text-align: left;
+		color: #fff;
+		margin-bottom: 27px;
+	}
+	&__text {
+		margin-bottom: 82px;
+		color: #fff;
+	}
+	&__text-block {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 14px;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+	&__column2 {
+		margin-right: 31px;
+	}
+	&__column3 {
+		position: relative;
+	}
+	&__contacts {
+	}
+	&__contact {
+	}
+	&__contact-a {
+		display: block;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 30px;
+		color: #fff;
+		margin-bottom: 20px;
+		padding-left: 33px;
+	}
+	&__contact-a:visited {
+		color: #fff;
+	}
+	&__a1 {
+		background: top 6px left url(../img/icons/footer-telegram.png) no-repeat;
+	}
+	&__a2 {
+		background: top 6px left url(../img/icons/footer-viber.png) no-repeat;
+	}
+	&__a3 {
+		background: top 6px left url(../img/icons/footer-whatsapp.png) no-repeat;
+	}
+	&__a4 {
+		background: top 6px left url(../img/icons/footer-call.png) no-repeat;
+	}
+	&__a5 {
+		background: top 9px left url(../img/icons/footer-mail.png) no-repeat;
+	}
+	&__button {
+		margin: 20px 0 40px 0;
+		position: relative;
+	}
+	&__button-img {
+	}
+	&__button-p {
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 12px;
+		left: 30px;
+		color: #fff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+	&__button:hover {
+		.footer__button-p {
+			color: #000;
+		}
+	}
+	&__logo {
+		position: absolute;
+		bottom: 80px;
+	}
+	&__logo-img {
+	}
+	&__2row {
+	}
+	&__copyright {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 16px;
+		letter-spacing: 0px;
+		text-align: center;
+		color: #565656;
+		position: relative;
+		margin-bottom: 17px;
+	}
+	&__copyright:before {
+		content: "";
+		position: absolute;
+		width: 200%;
+		bottom: 58px;
+		left: -50%;
+		height: 2px;
+		background-color: #4e4e4e;
+	}
+}
+@media (max-width: 790px) {
+	.footer {
+		&__title {
+			font-size: 18px;
+		}
+	}
+}
+@media (max-width: 712px) {
+	.footer {
+		&__columns {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__title {
+			position: relative;
+			cursor: pointer;
+			padding: 0px 0px 0px 30px;
+			width: 220px;
+			margin: 20px auto;
+		}
+		&__text {
+			display: none;
+		}
+		&__title:before,
+		&__title:after {
+			content: "";
+			width: 10px;
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+			top: 12px;
+			transition: all 0.3s ease 0s;
+		}
+		&__title:before {
+			transform: rotate(40deg);
+			left: 0;
+		}
+		&__title:after {
+			transform: rotate(-40deg);
+			left: 8px;
+		}
+
+		&__title.active:before,
+		&__title.active:after {
+			background-color: red;
+		}
+		&__title.active:before {
+			transform: rotate(-40deg);
+		}
+		&__title.active:after {
+			transform: rotate(40deg);
+		}
+
+		&__text {
+			display: none;
+			padding: 10px 0px 0px 0px;
+			margin-bottom: 0;
+			width: 320px;
+			margin-right: -100px;
+		}
+		&__logo {
+			position: relative;
+			bottom: 10px;
+			margin-bottom: 53px;
+			width: 156px;
+			margin-left: 30px;
+		}
+		&__button {
+			margin-left: 10px;
+		}
+		&__contacts {
+			display: none;
+		}
+		&__column1,
+		&__column2,
+		&__title3 {
+			margin-right: -0px;
+		}
+	}
+}
+@media (max-width: 500px) {
+	.footer__columns {
+		margin-left: -50px;
+	}
+}

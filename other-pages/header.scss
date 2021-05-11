@@ -1,0 +1,382 @@
+@import "../zerostyle.scss";
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/10177.eot");
+	src: local("☺"), url("../fonts/10177.woff") format("woff"), url("../fonts/10177.ttf") format("truetype"),
+		url("../fonts/10177.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: url("../fonts/Gilroy-ExtraBold.eot");
+	src: local("☺"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"),
+		url("../fonts/Gilroy-ExtraBold.ttf") format("truetype"), url("../fonts/Gilroy-ExtraBold.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+* {
+	font-family: "Gilroy";
+}
+button {
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+	transform: translate(0, 5px);
+}
+
+.header {
+	position: relative;
+	background-color: #fff;
+	max-width: 1220px;
+	padding: 31px 40px 20px 40px;
+	margin: 0 auto;
+	height: 146px;
+	&__1row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__block1 {
+		display: flex;
+	}
+	&__logo {
+		top: 8px;
+		position: relative;
+		margin-right: 45px;
+	}
+	&__logo:after {
+		content: "";
+		left: 156px;
+		position: absolute;
+		height: 40px;
+		width: 2px;
+		background-color: #97b8f1;
+	}
+
+	&__block2 {
+		position: relative;
+		top: 5px;
+		display: flex;
+	}
+	&__icon1 {
+		position: relative;
+	}
+	&__icon1-img {
+		transition: all 0.1s ease 0s;
+		width: 43px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	&__icon2 {
+		margin: 0 18px;
+	}
+	&__icon2-img {
+		transition: all 0.1s ease 0s;
+		width: 43px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	&__icon3-img {
+		transition: all 0.1s ease 0s;
+		cursor: pointer;
+		width: 45px;
+		border-radius: 50%;
+	}
+	&__icon1-img:hover {
+		transform: scale(1.1);
+	}
+	&__icon2-img:hover {
+		transform: scale(1.1);
+	}
+	&__icon3-img:hover {
+		transform: scale(1.1);
+	}
+	&__block3 {
+		display: flex;
+		position: relative;
+	}
+	&__contacts {
+		margin-right: 25px;
+	}
+	&__telephone {
+		font-family: "Arial, Helvetica, sans-serif";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	&__telephone:hover {
+		text-decoration: underline;
+	}
+	&__telephone::before {
+		position: absolute;
+		top: 5px;
+		left: -24px;
+		content: "";
+		width: 16px;
+		height: 16px;
+		background: url(../img/icons/telephone.png);
+	}
+	&__mail {
+		font-size: 18px;
+		line-height: 20px;
+		text-align: right;
+		cursor: pointer;
+		font-family: "Arial, Helvetica, sans-serif";
+	}
+	&__mail:hover {
+		text-decoration: underline;
+	}
+	&__mail:before {
+		position: absolute;
+		top: 39px;
+		left: -24px;
+		content: "";
+		width: 16px;
+		height: 12px;
+		background: url(../img/icons/mail.png);
+	}
+	&__button {
+		position: relative;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	&__button-img {
+		border-radius: 3px;
+	}
+	&__button:hover {
+		.header__button-p {
+			color: #000;
+		}
+	}
+	&__2row {
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding-right: 80px;
+	}
+	&__title-a {
+		font-family: "Gilroy";
+		font-size: 16px;
+		font-style: normal;
+		line-height: 19px;
+		letter-spacing: 0px;
+		text-align: left;
+		font-weight: 500;
+		transition: all 0.3s ease 0s;
+	}
+	&__title-a:hover {
+		color: #2560c0;
+		text-decoration: underline;
+	}
+	&__button-p {
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 12px;
+		left: 28px;
+		color: #fff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+	&__burger {
+		display: none;
+	}
+}
+@media (max-width: 1130px) {
+	.header {
+		&__text {
+			display: none;
+		}
+		&__logo:after {
+			display: none;
+		}
+		&__title-a {
+			font-size: 14px;
+		}
+		&__logo-img {
+			margin-right: -30px;
+		}
+		&__block3 {
+			margin-left: 30px;
+		}
+		&__block2 {
+			margin-right: -200px;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.header {
+		&__block2 {
+			margin-right: -100px;
+		}
+		&__title-a {
+			font-size: 13px;
+		}
+	}
+}
+@media (max-width: 900px) {
+	.header {
+		&__block2 {
+			margin-right: 0px;
+		}
+		&__title-a {
+			font-size: 12px;
+		}
+	}
+}
+@media (max-width: 800px) {
+	.header {
+		padding: 31px 20px 20px 28px;
+		&__2row {
+			padding-right: 48px;
+		}
+		&__icon2 {
+			margin: 0 7px;
+		}
+	}
+}
+
+@media (max-width: 748px) {
+	.header {
+		&__button {
+			display: none;
+		}
+		&__burger {
+			cursor: pointer;
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 30;
+			margin-top: 18px;
+		}
+		.header__burger span {
+			position: absolute;
+			background-color: #000;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all 0.5s ease 0s;
+		}
+		.header__burger:before,
+		.header__burger:after {
+			content: "";
+			background-color: #000;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.5s ease 0s;
+		}
+		.header__burger:before {
+			top: 0;
+		}
+		.header__burger:after {
+			bottom: 0;
+		}
+		.header__burger.active:before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		.header__burger.active span {
+			transform: scale(0);
+		}
+		.header__burger.active:after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+		&__2row {
+			overflow: auto;
+			position: absolute;
+			left: -100%;
+			transition: all 0.5s ease 0s;
+			top: 146px;
+			width: 100%;
+			background-color: #fff;
+			z-index: 3;
+			min-height: 520px;
+			flex-direction: column;
+			justify-content: start;
+			padding-right: 0;
+		}
+		&__2row.active {
+			left: 0;
+			padding-right: 0;
+		}
+		&__title {
+			height: 80px;
+			max-width: 350px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&__title-a {
+			font-size: 25px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.header {
+		&__block2 {
+			left: -100%;
+			transition: all 0.5s ease 0s;
+			display: flex;
+			position: absolute;
+			margin: 0 auto;
+			width: 145px;
+			top: 600px;
+			z-index: 50;
+		}
+		&__block2.active {
+			left: 50%;
+			transform: translate(-50%, 0px);
+		}
+	}
+}
+@media (max-width: 440px) {
+	.header {
+		padding: 31px 15px 20px 15px;
+		&__logo-img {
+			width: 95px;
+			height: 26px;
+			margin-top: 6px;
+		}
+		&__block3 {
+			margin-left: 10px;
+			margin-right: -10px;
+		}
+		&__title-a {
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: 380px) {
+	.header__telephone {
+		font-family: "Arial, Helvetica, sans-serif";
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 8px;
+		margin-top: 2px;
+		cursor: pointer;
+	}
+	.header__mail {
+		font-size: 15px;
+		line-height: 20px;
+		text-align: right;
+		cursor: pointer;
+	}
+	.header__contacts {
+		margin-right: 15px;
+	}
+}
