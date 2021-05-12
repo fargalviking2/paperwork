@@ -156,6 +156,10 @@ body {
 		gap: 15px;
 	}
 	&__grid-element {
+		transition: all 0.3s ease 0s;
+	}
+	&__grid-element:hover {
+		transform: scale(1.05);
 	}
 	&__grid-element-img {
 		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);

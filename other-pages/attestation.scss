@@ -117,12 +117,27 @@ body {
 		max-width: 450px;
 		margin-top: 27px;
 		margin-bottom: 17px;
+		transform: translate(0px, 100%);
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
+	&__column2-title._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 	&__column2-text {
 		max-width: 450px;
 		font-size: 17px;
 		font-weight: 500;
 		line-height: 26px;
+		transform: translate(0px, 100%);
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
+	&__column2-text._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		transition: all 0.8s ease 0.4s;
 	}
 }
 .block2 {
@@ -178,6 +193,13 @@ body {
 		line-height: 46px;
 		text-align: center;
 		margin-bottom: 25px;
+		transform: translate(300px, 0px);
+		opacity: 0;
+		transition: all 0.8s ease 0.3s;
+	}
+	&__big-title._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 	&__grid-layout {
 		margin: 0 auto;
@@ -233,6 +255,13 @@ body {
 		line-height: 51px;
 		color: #fff;
 		margin-bottom: 36px;
+		transform: translate(300px, 0px);
+		opacity: 0;
+		transition: all 0.8s ease 0.3s;
+	}
+	&__title._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 	&__grid-layoute {
 		display: grid;
@@ -278,7 +307,16 @@ body {
 		box-shadow: 0px 8px 18px rgba(167, 108, 67, 0.43892);
 	}
 }
-
+._anim-show {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+._anim-show._active,
+._active ._anim-show {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
 @media (max-width: 1240px) {
 	.main {
 		margin-left: 40px;
