@@ -1749,9 +1749,6 @@ body {
   .main__title {
     text-align: center;
   }
-  .header {
-    padding: 31px 5px 20px 28px;
-  }
   .block1__grid-layout {
     max-width: 300px;
     gap: 15px;
