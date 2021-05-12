@@ -994,8 +994,9 @@ button:hover {
   }
 }
 
-body {
-  overflow-x: hidden;
+.wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .wrapper-header {
