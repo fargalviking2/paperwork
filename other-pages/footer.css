@@ -219,6 +219,10 @@ button:hover {
   position: relative;
 }
 
+.footer__button-img {
+  border-radius: 3px;
+}
+
 .footer__button-p {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -362,6 +366,9 @@ button:hover {
     margin-top: 10px;
   }
   .footer__button {
+    margin-left: 0;
+  }
+  .footer__logo {
     margin-left: 0;
   }
 }

@@ -2,8 +2,9 @@
 @import "header.scss";
 @import "footer.scss";
 
-body {
-	overflow-x: hidden;
+.wrapper {
+	overflow: hidden;
+	width: 100%;
 }
 .wrapper-header {
 	width: 100%;
@@ -75,7 +76,7 @@ body {
 		line-height: 28px;
 		margin-bottom: 33px;
 		margin-top: 33px;
-		transform: translate(0px, 120%);
+		transform: translate(00px, 120%);
 		opacity: 0;
 		transition: all 0.8s ease 0s;
 	}
@@ -95,7 +96,7 @@ body {
 		width: 202px;
 		height: 42px;
 		position: relative;
-		transform: translate(0px, 120%);
+		transform: translate(00px, 120%);
 		opacity: 0;
 		transition: all 0.8s ease 0s;
 	}
@@ -623,6 +624,12 @@ body {
 			align-items: center;
 			top: 139px;
 		}
+		&__text {
+			transform: translate(100px, 0px);
+		}
+		&__button {
+			transform: translate(100px, 0px);
+		}
 		&__title {
 			text-align: center;
 		}
@@ -635,6 +642,20 @@ body {
 		}
 		&__grid-element-img {
 			width: 135px;
+		}
+	}
+	.block2 {
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		&__grid-layout {
+			gap: 25px;
+			display: flex;
+			flex-direction: column;
+		}
+		&__text {
+			max-width: 250px;
+			font-size: 14px;
 		}
 	}
 	.block3,
@@ -664,6 +685,8 @@ body {
 			margin-top: 10px;
 		}
 	}
+}
+@media (max-width: 350px) {
 }
 .popup {
 	position: fixed;

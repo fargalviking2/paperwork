@@ -106,6 +106,7 @@ button:hover {
 		position: relative;
 	}
 	&__button-img {
+		border-radius: 3px;
 	}
 	&__button-p {
 		transition: all 0.3s ease 0s;

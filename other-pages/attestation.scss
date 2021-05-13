@@ -2,9 +2,9 @@
 @import "header.scss";
 @import "footer.scss";
 
-body {
-	overflow-x: hidden;
+.wrapper {
 	overflow: hidden;
+	width: 100%;
 }
 
 .wrapper-header {
@@ -633,6 +633,24 @@ body {
 			font-size: 20px;
 			font-weight: 700;
 			margin-top: 20px;
+			transform: translate(100px, 0px);
+			opacity: 0;
+			transition: all 0.5s ease 0s;
+		}
+		&__column1-text1._active {
+			transform: translate(0, 0px);
+			opacity: 1;
+			transition: all 0.5s ease 0.9s;
+		}
+		&__column1-cost {
+			transform: translate(150px, 0px);
+			opacity: 0;
+			transition: all 0.5s ease 0s;
+		}
+		&__column1-cost._active {
+			transform: translate(0, 0px);
+			opacity: 1;
+			transition: all 0.5s ease 1.2s;
 		}
 	}
 	.block3 {

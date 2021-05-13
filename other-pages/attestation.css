@@ -844,6 +844,10 @@ button:hover {
   position: relative;
 }
 
+.footer__button-img {
+  border-radius: 3px;
+}
+
 .footer__button-p {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -1710,6 +1714,32 @@ button:hover {
     font-size: 20px;
     font-weight: 700;
     margin-top: 20px;
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .main__column1-text1._active {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+    -webkit-transition: all 0.5s ease 0.9s;
+    transition: all 0.5s ease 0.9s;
+  }
+  .main__column1-cost {
+    -webkit-transform: translate(150px, 0px);
+            transform: translate(150px, 0px);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .main__column1-cost._active {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+    -webkit-transition: all 0.5s ease 1.2s;
+    transition: all 0.5s ease 1.2s;
   }
   .block3__grid-layout {
     gap: 35px;
