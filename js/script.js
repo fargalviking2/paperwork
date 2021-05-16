@@ -62,6 +62,33 @@ $(document).ready(function () {
 			},
 		]
 	});
+	$('.news__slider').slick({
+		arrows: false,
+		dots: true,
+		adaptiveHeight: true,
+		slidesToShow: 4,
+		rows: 2,
+		responsive: [
+			{
+				breakpoint: 1240,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 940,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
+	});
 	const animItems = document.querySelectorAll('._anim-items');
 
 	if (animItems.length > 0) {

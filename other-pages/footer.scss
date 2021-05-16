@@ -26,6 +26,7 @@ button:hover {
 	transform: translate(0, 5px);
 }
 .footer {
+	transition: all 0.5s ease 0s;
 	background-color: #333333;
 	padding-top: 53px;
 	padding-bottom: 20px;

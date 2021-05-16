@@ -176,6 +176,8 @@ button:hover {
   width: 43px;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+          box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 }
 
 .header__icon2 {
@@ -188,6 +190,8 @@ button:hover {
   width: 43px;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+          box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
 }
 
 .header__icon3-img {
@@ -196,6 +200,8 @@ button:hover {
   cursor: pointer;
   width: 45px;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+          box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
 }
 
 .header__icon1-img:hover {

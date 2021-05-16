@@ -266,6 +266,8 @@ button:hover {
   width: 43px;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+          box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 }
 
 .header__icon2 {
@@ -278,6 +280,8 @@ button:hover {
   width: 43px;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+          box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
 }
 
 .header__icon3-img {
@@ -286,6 +290,8 @@ button:hover {
   cursor: pointer;
   width: 45px;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+          box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
 }
 
 .header__icon1-img:hover {
@@ -747,6 +753,8 @@ button:hover {
 }
 
 .footer {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   background-color: #333333;
   padding-top: 53px;
   padding-bottom: 20px;
@@ -1950,4 +1958,5 @@ button:hover {
 
 .blue-span {
   font-family: none;
+  color: #86adef;
 }

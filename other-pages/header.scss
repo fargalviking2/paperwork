@@ -66,6 +66,7 @@ button:hover {
 		width: 43px;
 		border-radius: 50%;
 		cursor: pointer;
+		box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 	}
 	&__icon2 {
 		margin: 0 18px;
@@ -75,6 +76,7 @@ button:hover {
 		width: 43px;
 		border-radius: 50%;
 		cursor: pointer;
+		box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
 	}
 
 	&__icon3-img {
@@ -82,6 +84,7 @@ button:hover {
 		cursor: pointer;
 		width: 45px;
 		border-radius: 50%;
+		box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
 	}
 	&__icon1-img:hover {
 		transform: scale(1.1);
