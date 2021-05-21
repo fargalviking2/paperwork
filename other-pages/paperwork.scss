@@ -2,6 +2,9 @@
 @import "header.scss";
 @import "footer.scss";
 
+body {
+	overflow-x: hidden;
+}
 .wrapper {
 	overflow: hidden;
 	width: 100%;
@@ -701,6 +704,7 @@
 	visibility: hidden;
 	overflow-x: hidden;
 	overflow-y: auto;
+	overflow: hidden;
 	transition: all 0.8s ease 0s;
 	z-index: 100;
 	font-family: none;
@@ -718,6 +722,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+		overflow: hidden;
 	}
 	&__body {
 		min-height: 100%;

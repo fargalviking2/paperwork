@@ -1006,6 +1006,10 @@ button:hover {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   overflow: hidden;
   width: 100%;
@@ -1839,6 +1843,7 @@ button:hover {
   visibility: hidden;
   overflow-x: hidden;
   overflow-y: auto;
+  overflow: hidden;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
   z-index: 100;
@@ -1862,6 +1867,7 @@ button:hover {
   height: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .popup__body {
