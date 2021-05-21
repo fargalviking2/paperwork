@@ -1550,9 +1550,6 @@ button:hover {
   .slider2 {
     max-width: 620px;
   }
-  .slider2 .slick-arrow.slick-next {
-    left: 12px;
-  }
 }
 
 @media (max-width: 910px) {
@@ -1616,13 +1613,13 @@ button:hover {
     padding-right: 45px;
     padding-left: 44px;
   }
-  .slider2 .slick-arrow.slick-prev {
+  .slider2 .slick-arrow.slick-next {
     background: url("../img/other/right.png") 0 0/100% no-repeat;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     right: 0px;
   }
-  .slider2 .slick-arrow.slick-next {
+  .slider2 .slick-arrow.slick-prev {
     left: 0px;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
