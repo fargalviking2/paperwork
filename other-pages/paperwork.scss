@@ -30,9 +30,7 @@ body {
 		position: relative;
 		z-index: 200;
 	}
-	&__block2.active {
-		top: 570px;
-	}
+
 	&__title-a {
 		position: relative;
 		color: #000;
@@ -568,6 +566,9 @@ body {
 	}
 	.header__2row.active {
 		z-index: 8;
+	}
+	.header__block2.active {
+		top: 570px;
 	}
 }
 @media (max-width: 580px) {
